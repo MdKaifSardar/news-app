@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "totalResults": 38,
+  "articles": [
+    {
+      "source": { "id": null, "name": "CNBC" },
+      "author": "Karen Gilchrist",
+      "title": "Unilever to split off its ice cream unit including Ben & Jerry’s; shares pop 5% - CNBC",
+      "description": "Consumer goods giant Unilever said Tuesday that it is separating its ice cream unit, which includes Ben & Jerry's and Magnum, as part of a restructuring plan that will impact 7,500 jobs.",
+      "url": "https://www.cnbc.com/2024/03/19/unilever-announces-plan-to-spin-off-its-ice-cream-unit-including-ben-jerrys.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/107389223-1710838072299-gettyimages-1240913852-porzycki-foodinkr220524_npLdR.jpeg?v=1710838135&w=1920&h=1080",
+      "publishedAt": "2024-03-19T07:53:08Z",
+      "content": "Shares of consumer goods giant Unilever rose more than 5% Tuesday after the company announced plans to separate its ice cream unit, which includes Ben &amp; Jerry's and Magnum, as part of a restructu… [+1522 chars]"
+    },
+    {
+      "source": { "id": null, "name": "NBC 7 San Diego" },
+      "author": "Renee Schmiedeberg",
+      "title": "PHOTOS: San Diego residents gaze up in awe as SpaceX rocket dazzles SoCal sky - NBC San Diego",
+      "description": "A rocket launch was clearly visible across San Diego County skies on Monday night as SpaceX launched their Falcon 9, sending 22 Starlink satellites into low-Earth orbit from Vandenberg Space Force Base in Santa Barbara County.",
+      "url": "http://www.nbcsandiego.com/news/local/photos-san-diego-residents-gaze-up-in-awe-as-spacex-rocket-dazzles-socal-sky/3464897/",
+      "urlToImage": "https://media.nbcsandiego.com/2024/03/IMG_7883_73515c.jpeg?quality=85&strip=all&resize=1200%2C675",
+      "publishedAt": "2024-03-19T07:11:26Z",
+      "content": "It's not the aliens. It's SpaceX!\r\nA rocket launch was clearly visible across San Diego County skies on Monday night as SpaceX launched their Falcon 9, sending 22 Starlink satellites into low-Earth o… [+1715 chars]"
+    },
+    {
+      "source": { "id": "espn", "name": "ESPN" },
+      "author": null,
+      "title": "Anthony Edwards throws down monster slam as Timberwolves win - ESPN",
+      "description": "Anthony Edwards threw down a monster slam over John Collins of the Jazz in the third quarter, helping the Timberwolves to a memorable 114-104 victory but leaving both players banged up after the play.",
+      "url": "https://www.espn.com/nba/story/_/id/39763646/anthony-edwards-throws-monster-slam-timberwolves-win",
+      "urlToImage": "https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0319%2Fr1307083_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-03-19T06:29:00Z",
+      "content": "Mar 19, 2024, 01:29 AM ET\r\nSALT LAKE CITY -- One thunderous dunk provided a perfect snapshot of Anthony Edwards' second-half dominance Monday night.\r\nEdwards threw down a monster slam over John Colli… [+2652 chars]"
+    }
+  ]
+}
