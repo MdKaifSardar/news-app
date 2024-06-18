@@ -29,7 +29,8 @@ export default class App extends Component {
   }
   render(){
     return (
-      <Router>
+      <>
+      {/* // <Router> */}
         <Navbar setQuery={this.setSearchTopic}/>
         <LoadingBar
         height={3}
@@ -37,7 +38,8 @@ export default class App extends Component {
         color='#f11946'
         progress={this.state.progress}
         />
-        <Routes>
+        <News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="general" pageSize={6} category="general"/>
+        {/* <Routes>
           <Route exact path="/" element={<News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="general" pageSize={6} category="general"/>}></Route>
           <Route exact path="/business" element={<News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="business" pageSize={6} category="business"/>}></Route>
           <Route exact path="/entertainment" element={<News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="entertainment" pageSize={6} category="entertainment"/>}></Route>
@@ -46,7 +48,8 @@ export default class App extends Component {
           <Route exact path="/sports" element={<News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="sports" pageSize={6} category="sports"/>}></Route>
           <Route exact path="/technology" element={<News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="technology" pageSize={6} category="technology"/>}></Route>
         </Routes>
-      </Router>
+      </Router> */}
+      </>
     )
   }
 }
