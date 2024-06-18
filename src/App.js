@@ -39,6 +39,7 @@ export default class App extends Component {
         progress={this.state.progress}
         />
         <News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="general" pageSize={6} category="general"/>
+        {/* <News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="general" pageSize={6} category="general"/> */}
         {/* <Routes>
           <Route exact path="/" element={<News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="general" pageSize={6} category="general"/>}></Route>
           <Route exact path="/business" element={<News setProgress={this.setProgress} searchTopicNews={this.state.searchTopic} key="business" pageSize={6} category="business"/>}></Route>

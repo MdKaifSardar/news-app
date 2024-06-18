@@ -27,16 +27,17 @@ export class Navbar extends Component {
   render() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <Link className="navbar-brand" to="#">VitalVoice</Link>
+            {/* <Link className="navbar-brand" to="/">VitalVoice</Link> */}
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mr-auto">
-                <li className="nav-item active"><Link className="nav-link" to="/">general</Link></li>
-                <li className="nav-item active"><Link className="nav-link" to="/business">business</Link></li>
+                <li className="nav-item active">home</li>
+                {/* <li className="nav-item active"><Link className="nav-link" to="/">general</Link></li> */}
+                {/* <li className="nav-item active"><Link className="nav-link" to="/business">business</Link></li>
                 <li className="nav-item active"><Link className="nav-link" to="/entertainment">entertainment</Link></li>
                 <li className="nav-item active"><Link className="nav-link" to="/health">health</Link></li>
                 <li className="nav-item active"><Link className="nav-link" to="/science">science</Link></li>
                 <li className="nav-item active"><Link className="nav-link" to="/sports">sports</Link></li>
-                <li className="nav-item active"><Link className="nav-link" to="/technology">technology</Link></li>
+                <li className="nav-item active"><Link className="nav-link" to="/technology">technology</Link></li> */}
               </ul>
 
 
