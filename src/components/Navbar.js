@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Link
 } from "react-router-dom";
+import '../css/navbar.css'
 // import News from './News';
 
 
@@ -26,38 +27,31 @@ export class Navbar extends Component {
   }
   render() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            {/* <Link className="navbar-brand" to="/">VitalVoice</Link> */}
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">home</li>
-                {/* <li className="nav-item active"><Link className="nav-link" to="/">general</Link></li> */}
-                {/* <li className="nav-item active"><Link className="nav-link" to="/business">business</Link></li>
-                <li className="nav-item active"><Link className="nav-link" to="/entertainment">entertainment</Link></li>
-                <li className="nav-item active"><Link className="nav-link" to="/health">health</Link></li>
-                <li className="nav-item active"><Link className="nav-link" to="/science">science</Link></li>
-                <li className="nav-item active"><Link className="nav-link" to="/sports">sports</Link></li>
-                <li className="nav-item active"><Link className="nav-link" to="/technology">technology</Link></li> */}
+        <nav className="navbar_main_container">
+            <Link className="nav_main_link" to="#">VitalVoice</Link>
+            <div className="options_container" id="navbarSupportedContent">
+
+              <ul className="options_ul">
+                <li className="options_ul"><Link className="nav_link" to="/">general</Link></li>
+                <li className="options_ul"><Link className="nav_link" to="/business">business</Link></li>
+                <li className="options_ul"><Link className="nav_link" to="/entertainment">entertainment</Link></li>
+                <li className="options_ul"><Link className="nav_link" to="/health">health</Link></li>
+                <li className="options_ul"><Link className="nav_link" to="/science">science</Link></li>
+                <li className="options_ul"><Link className="nav_link" to="/sports">sports</Link></li>
+                <li className="options_ul"><Link className="nav_link" to="/technology">technology</Link></li>
               </ul>
 
 
-              <div className="searchbar">
+              <div className="searchbar_navbar">
                 <input
+                className='input_searchbar'
                 value={this.state.query}
                 onChange={this.handleOnChange}
                 placeholder="Search Country"
                 type="text"/>
 
-                <button className="searchButton" onClick={this.handleOnSearchBtnClk}>Search</button>
+                <div className="search_button_navbar" onClick={this.handleOnSearchBtnClk}>Search</div>
               </div>
-
-
-                {/* <button className="country-div" onClick={() => this.changeOnClick(this.state.toggleOnClick)}>
-                  Countries
-                  {
-                    this.state.toggleOnClick && <DropDownCountry/>
-                  }
-                </button> */}
             </div>
             </nav>
     )
