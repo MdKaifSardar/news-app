@@ -3,6 +3,7 @@ import NewsItems from "./NewsItems";
 import Loading from "./loading";
 import PropTypes from 'prop-types';
 import InfiniteScroll from "react-infinite-scroll-component";
+import '../css/news.css';
 
 
 export class News extends Component {
@@ -68,8 +69,8 @@ export class News extends Component {
   
   render() {
     return (
-      <div className="container my-3 con1">
-        <h1 className="text-center mainHeading">{`Vital Voice top headlines on ${this.props.category}`}</h1>
+      <div className="news_container">
+        <h1 className="text-center mainHeading"><span className="headline_text_vital_voice">VitalVoice </span>{`top headlines on`} <span className="text_typeofnews">{this.props.category}</span></h1>
         {/* {this.state.loading && <Loading/>} */}
 
         <InfiniteScroll

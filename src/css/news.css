@@ -1,0 +1,23 @@
+.headline_text_vital_voice{
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #008c9c, #85f2ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text_typeofnews{
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #02b890, #00c0b673);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.news_container{
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

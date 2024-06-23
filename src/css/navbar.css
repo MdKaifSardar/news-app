@@ -1,5 +1,5 @@
 .navbar_main_container{
-    padding: .5rem;
+    padding: 1.5rem .5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@
 }
 .nav_link{
     border-radius: .5rem;
-    background-color: rgba(128, 128, 128, 0.432);
+    background-color: black;
     padding: .5rem;
     margin: 0 4px;
     color: white;
@@ -30,9 +30,10 @@
 
 }
 .nav_link:hover{
-    color: white;
-    background-color: rgba(128, 128, 128, 0.616);
+    background-color: white;
+    color: black;
     text-decoration: none;
+    box-shadow: 1px 1px 1px 1px rgba(80, 80, 80, 0.336);
 }
 .options_container{
     margin: 1rem 1rem 0 1rem;
@@ -85,3 +86,151 @@
     background-color: rgba(187, 114, 255, 0.671);
     cursor: pointer;
 }
+@keyframes showlist {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.open_navbar_options{
+    border-radius: .3rem;
+    background-color: blueviolet;
+    z-index: 1;
+    list-style: none;
+    position: absolute;
+    top: 9.3rem;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    color: white;
+    height: 20rem;
+    width: fit-content;
+    animation: showlist;
+    transform-origin: left;
+    animation-iteration-count: initial;
+    animation-duration: .4s;
+}
+@keyframes hidelist {
+    0%{
+        border-radius: .3rem;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        top: 9.3rem;
+        left: 30px;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: space-evenly;
+        padding: 1rem;
+        transform: scaleX(1);
+    }
+    99%{
+        border-radius: .3rem;
+        display: flex;
+        position: absolute;
+        top: 9.3rem;
+        z-index: 1;
+        left: 30px;
+        list-style: none;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: space-evenly;
+        transform: scaleX(0);
+    }
+    100%{
+        display: none;
+    }
+}
+.closed_navbar_options{
+    display: none;
+    position: absolute;
+    animation: hidelist;
+    transform-origin: left;
+    animation-iteration-count: initial;
+    animation-duration: .4s;
+}
+.option_btn{
+    padding: .5em;
+    border-radius: 1rem;
+    border: 1px solid whte;
+}
+
+.menu_icon{
+    color: white;
+}
+.option_btn:hover{
+    background-color: white;
+    .menu_icon{
+        color: black;
+    }
+}
+.options_list{
+    display: none;
+}
+@media (max-width: 960px) {
+    .options_list{
+        display: block;
+    }
+    .options_ul{
+        display: none;
+    }
+  }
+  .nav_link_new{
+    padding: .3rem;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: .2rem;
+  }
+  .nav_link_new:hover{
+    color: rgb(38, 0, 73);
+    text-decoration: none;
+  }
+  .VV_logo{
+    background-image: url('/public/vitalvoice.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4rem;
+    background-color: blueviolet;
+    background-position: center;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .top_nav{
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .link_pages{
+    padding: 3px 5px;
+    border-radius: .4rem;
+    margin-left: 2rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .link_pages:hover{
+    color: white;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px white;
+  }
+  .logo_title_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
