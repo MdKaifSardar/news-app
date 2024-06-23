@@ -39,7 +39,7 @@ export class Navbar extends Component {
               <div className='VV_logo' />
               <Link className="nav_main_link" to="#">VitalVoice</Link>
             </div>
-            <div className='top_nav'>
+            <div className='link_pages_container'>
               <Link className='link_pages' to='/about'>About</Link>
               <Link className='link_pages' to='/Contact Us'>Contact</Link>
             </div>
